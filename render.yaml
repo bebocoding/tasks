@@ -1,0 +1,6 @@
+services:
+  - name: jupyter
+    buildCommand: docker build -t $CONTAINER_IMAGE_NAME .
+    env:
+      - key: PORT
+        value: 8888
